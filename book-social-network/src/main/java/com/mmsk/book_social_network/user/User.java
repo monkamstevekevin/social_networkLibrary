@@ -1,6 +1,7 @@
 package com.mmsk.book_social_network.user;
 
 import com.mmsk.book_social_network.book.Book;
+import com.mmsk.book_social_network.history.BookTransactionHistory;
 import com.mmsk.book_social_network.role.Role;
 import jakarta.persistence.*;
 import lombok.*;
@@ -48,6 +49,8 @@ public class User implements UserDetails, Principal {
 
     @OneToMany(mappedBy = "owner")
     private List<Book> books;
+    @OneToMany(mappedBy = "user")
+    private List<BookTransactionHistory>histories;
 
     @CreatedDate
     @Column(nullable = false, updatable = false)
@@ -146,4 +149,5 @@ public class User implements UserDetails, Principal {
     public String fullName(){
         return firstName + " " + lastName;
     }
+
 }

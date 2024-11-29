@@ -5,22 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8335d6cb-0b5b-49cb-8064-b12bbb249e9e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-social-network/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-social-network/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-social-network/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-social-network/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-social-network/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-social-network/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/BookSocialNetworkApiApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/user/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/resources/templates/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-social-network/src/test/java/com/mmsk/book_social_network/BookSocialNetworkApiApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/book/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/book/BookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/book/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/book/BookRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/book/BookResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/book/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/book/BookSpecification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/book/BorrowedBookResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/common/PageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/config/ApplicationAuditAware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/config/OpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/exception/OperationNotPermittedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/feedback/FeedBackRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/feedback/FeedbackController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/feedback/FeedbackMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/feedback/FeedbackRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/feedback/FeedbackResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/feedback/FeedbackService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/file/FileStorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/file/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/history/BookTransactionHistoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-social-network/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-social-network/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/BookSocialNetworkApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/BookSocialNetworkApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/book/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/config/BeanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/config/BeanConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/feedback/FeedBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/feedback/Feedback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/handle/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/handle/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/history/BookTransactionHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/history/BookTransactionHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-social-network/src/main/java/com/mmsk/book_social_network/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-social-network/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/book-social-network/src/main/resources/application-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,27 +61,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/runnerz/book-social-network&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/runnerz/book-social-network/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Template Data Languages&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/runnerz/book-social-network/book-social-network",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/runnerz/book-social-network/src/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "Template Data Languages",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\runnerz\book-social-network" />
@@ -142,6 +158,7 @@
       <workItem from="1732244589683" duration="2000" />
       <workItem from="1732244609742" duration="6000" />
       <workItem from="1732244911484" duration="669000" />
+      <workItem from="1732595037639" duration="1632000" />
     </task>
     <servers />
   </component>

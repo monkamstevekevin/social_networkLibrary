@@ -20,7 +20,7 @@ import static org.springframework.security.config.http.SessionCreationPolicy.STA
 @EnableMethodSecurity(securedEnabled = true)
 public class SecurityConfig {
 
-    private final JwtAuthFilter jwtAuthFilter;
+    private final JwtFilter jwtFilter;
      private final AuthenticationProvider authenticationProvider;
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
@@ -41,7 +41,7 @@ public class SecurityConfig {
                           "/swagger-ui.html").permitAll().anyRequest().authenticated())
                           .sessionManagement(session -> session.sessionCreationPolicy(STATELESS))
           .authenticationProvider(authenticationProvider)
-          .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
+          .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
 
 return http.build();
 

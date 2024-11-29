@@ -1,5 +1,6 @@
 package com.mmsk.book_social_network.handle;
 
+import com.mmsk.book_social_network.exception.OperationNotPermittedException;
 import com.mmsk.book_social_network.handle.ExceptionResponse;
 import jakarta.mail.MessagingException;
 import org.springframework.http.ResponseEntity;
@@ -86,16 +87,16 @@ public class GlobalExceptionHandler {
 //                );
 //    }
 //
-//    @ExceptionHandler(OperationNotPermittedException.class)
-//    public ResponseEntity<ExceptionResponse> handleException(OperationNotPermittedException exp) {
-//        return ResponseEntity
-//                .status(BAD_REQUEST)
-//                .body(
-//                        ExceptionResponse.builder()
-//                                .error(exp.getMessage())
-//                                .build()
-//                );
-//    }
+    @ExceptionHandler(OperationNotPermittedException.class)
+    public ResponseEntity<ExceptionResponse> handleException(OperationNotPermittedException exp) {
+        return ResponseEntity
+                .status(BAD_REQUEST)
+                .body(
+                        ExceptionResponse.builder()
+                                .error(exp.getMessage())
+                                .build()
+                );
+    }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<ExceptionResponse> handleMethodArgumentNotValidException(MethodArgumentNotValidException exp) {
